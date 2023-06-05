@@ -1,5 +1,9 @@
+## Contributing - Git Commands
 
-## Contributing - Open Source
+Welcome to the website reposiroty of SEDS VIT Chennai. We are glad to have you here!
+For creating any pages you are required to create a folder, add the HTML, CSS and JS files related to the page and then add the link to the page in the `index.html` file.`
+
+## Contributing - Git Commands
 
 **1.** Fork the repository.
 
