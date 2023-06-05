@@ -16,7 +16,7 @@ git clone --depth 1 https://github.com/yourusername/git-repo-name.git
 **3.** Navigate to the project directory. 📁
 
 ```
-cd healthphilics
+cd FolderName
 ```
 
 **4.** Add a reference (remote) to the original repository.
