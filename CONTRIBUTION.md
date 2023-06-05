@@ -3,6 +3,13 @@
 Welcome to the website reposiroty of SEDS VIT Chennai. We are glad to have you here!
 For creating any pages you are required to create a folder, add the HTML, CSS and JS files related to the page and then add the link to the page in the `index.html` file.`
 
+**Tech Stack**
+
+1. HTML
+2. Taiwind CSS
+3. JavaScript
+4. Dependencies - AOS, Swiper, Font Awesome
+
 ## Contributing - Git Commands
 
 **1.** Fork the repository.
