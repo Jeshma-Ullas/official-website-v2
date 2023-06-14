@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* .wrapper{
+    display: flex;
+    flex-direction: row;
+    gap:13rem;
+} */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Heading{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+}
+
+/*
+Rocket Launcher Styling
+*/
+body {
+    background: #e6e6e6;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.content {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+svg {
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem ;
+}
+
+button {
+    cursor: pointer;
+    margin: 1rem 0.5rem 0;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #3f3d56;
+    color: #e6e6e6;
+    border: 1px solid black;
+}
+
+button:hover {
+    background-color: #2f2e41;
+}
+
+button:disabled {
+    opacity: 0.25;
+}
+
+/*
+** Keyframes
+*/
+@-webkit-keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes signal {
+    33% {
+        fill: #eb5757;
+    }
+
+    66% {
+        fill: #27ae60;
+    }
+}
+
+@keyframes signal {
+    33% {
+        fill: #eb5757;
+    }
+
+    66% {
+        fill: #27ae60;
+    }
+}
+
+@-webkit-keyframes comet {
+    0% {
+        transform: rotate(10deg) translate3d(300px, -300px, 0);
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.9;
+    }
+
+    75% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: rotate(0deg) translate3d(-400px, 400px, 0px);
+        opacity: 0.25;
+    }
+}
+
+@keyframes comet {
+    0% {
+        transform: rotate(10deg) translate3d(300px, -300px, 0);
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.9;
+    }
+
+    75% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: rotate(0deg) translate3d(-400px, 400px, 0px);
+        opacity: 0.25;
+    }
+}
+
+@-webkit-keyframes launch {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(0, -1000px, 0px);
+    }
+}
+
+@keyframes launch {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(0, -1000px, 0px);
+    }
+}
+
+@-webkit-keyframes smoke {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale3d(1.5, 1, 1);
+    }
+}
+
+@keyframes smoke {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale3d(1.5, 1, 1);
+    }
+}
+
+@-webkit-keyframes flame {
+    50% {
+        opacity: 0.75;
+    }
+}
+
+@keyframes flame {
+    50% {
+        opacity: 0.75;
+    }
+}
+
+/*
+** Applied CSS
+*/
+#smoke {
+    opacity: 0;
+    transform-origin: 50% 0%;
+}
+
+#rocket .flame {
+    -webkit-animation: flame 2s 0s ease-in-out infinite both;
+    animation: flame 2s 0s ease-in-out infinite both;
+}
+
+.stars {
+    -webkit-animation: blink 8s -1s ease-in-out infinite both;
+    animation: blink 8s -1s ease-in-out infinite both;
+}
+
+[class^=dot] {
+    -webkit-animation: blink 5s -3s ease-in-out infinite both;
+    animation: blink 5s -3s ease-in-out infinite both;
+}
+
+.comet {
+    transform-origin: 100% 50%;
+}
+
+.comet.one {
+    -webkit-animation: comet 5s 0s ease-in-out infinite both;
+    animation: comet 5s 0s ease-in-out infinite both;
+}
+
+.comet.two {
+    -webkit-animation: comet 5s -2s ease-in-out infinite both;
+    animation: comet 5s -2s ease-in-out infinite both;
+}
+
+/*
+** Launch Animations
+*/
+svg.launched #signal {
+    -webkit-animation: signal 5s -1s ease-in-out infinite both;
+    animation: signal 5s -1s ease-in-out infinite both;
+}
+
+svg.launched #smoke {
+    -webkit-animation: smoke 7s 0s ease-out normal forwards;
+    animation: smoke 7s 0s ease-out normal forwards;
+}
+
+svg.launched #rocket {
+    -webkit-animation: launch 5s 2s ease-in normal forwards;
+    animation: launch 5s 2s ease-in normal forwards;
+}
