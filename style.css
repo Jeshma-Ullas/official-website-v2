@@ -1,25 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    /* background: #3f3d56 */
 }
-/* .wrapper{
-    display: flex;
-    flex-direction: row;
-    gap:13rem;
-} */
-.container{
+
+body{
+    overflow: hidden;
+}
+
+
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.Heading{
+
+.Heading {
     display: flex;
     flex-direction: column;
     width: 50%;
     height: 50%;
 }
+
+
 
 /*
 Rocket Launcher Styling
@@ -48,12 +53,21 @@ svg {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    margin: 1rem ;
+    margin: 1rem;
+}
+
+.explore-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem;
 }
 
 button {
     cursor: pointer;
     margin: 1rem 0.5rem 0;
+    padding: 1rem;
     font-family: sans-serif;
     text-transform: uppercase;
     font-weight: bold;
@@ -64,11 +78,14 @@ button {
     padding: 0.5rem 1rem;
     background-color: #3f3d56;
     color: #e6e6e6;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    transition: all 0.3s ease-in-out;
 }
 
 button:hover {
     background-color: #2f2e41;
+    transition: all 0.3s ease-in-out;
+
 }
 
 button:disabled {
@@ -265,4 +282,19 @@ svg.launched #smoke {
 svg.launched #rocket {
     -webkit-animation: launch 5s 2s ease-in normal forwards;
     animation: launch 5s 2s ease-in normal forwards;
+}
+
+/* Rotation */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rotating-image {
+    animation: rotate 8s linear infinite;
 }

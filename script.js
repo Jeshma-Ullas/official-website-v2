@@ -13,3 +13,5 @@ resetButton.addEventListener("click", function () {
     rocketLaunch.setAttribute("class", "");
     launchButton.removeAttribute("disabled");
 });
+
+

@@ -11,26 +11,39 @@
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,300;0,400;1,100&display=swap"
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/zdog@1.1.2/dist/zdog.js"></script>
+
+
     <title>Landing Page</title>
 </head>
 
 <body>
-    <div class="wrapper flex flex-row">
-        <div class="container flex-row">
-            <div class="Heading flex flex-col mx-5">
-                <!-- <img src="./SRF.jpg" alt="" width="30%" height="30%"> -->
+    <div class="wrapper bg-[#202125] flex flex-col lg:flex-row">
+        <div class="container flex-col lg:flex-row bg-[#202125]">
+            <div class="Heading flex flex-col mx-3 items-centre">
                 <div class="flex justify-center my-2">
-                    <h3>SEDS ANTARIKSH</h3>
+                    <img src="./Logo.jpg" alt="" width="30%" height="30%" class="rotating-image">
                 </div>
-                <p class="px-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                <div class="flex justify-center my-2">
+                    <h3 class="text-4xl text-slate-50">SEDS ANTARIKSH</h3>
+                </div>
+                <p class="px-10 text-base text-slate-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod
+                    tempor incididunt ut labore
                     et
                     dolore magna
                     aliqua. Turpis egestas sed tempus urna et pharetra pharetra massa massa. Ullamcorper morbi tincidunt
                     ornare massa. Amet
                     justo donec enim diam. Luctus venenatis lectus magna fringilla urna porttitor. Eget nullam non nisi
                 </p>
+                <button class="explore-buttons">
+
+                    <a href="/" class="text-slate-50">Exploration Begins </a>
+                </button>
             </div>
-            <div class="content">
+
+            <div class="content max-w-fit ">
                 <!-- Begin SVG -->
                 <svg id="rocket-launch" viewBox="0 0 754 751" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0)">
@@ -170,8 +183,16 @@
 
                 <!-- Buttons -->
                 <div class="buttons">
-                    <button id="launch">Launch</button>
-                    <button id="reset" disabled>Reset</button>
+                    <button id="launch">
+                        <div class="text-slate-50 p-2">
+                            Launch
+                        </div>
+                    </button>
+                    <button id="reset" class="text-slate-50" disabled>
+                        <div class="text-slate-50 p-2">
+                            Reset
+                        </div>
+                    </button>
                 </div>
             </div>
         </div>
