@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #ad4f4f;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed{
+  background: #c3c2c2;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 0.5px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right,
+.footer-distributed .footerBottom{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+/* .footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span{
+  color:  lightseagreen;
+} */ 
+
+/* Footer links */
+img[src="seds_logo.png"] {
+    width: 800px;
+    height: 400px;
+}
+/* .footer-distributed .vertical {
+  border-left: 6px solid black;
+  height: 200px;
+  position:absolute;
+  left: 50%;
+} */
+
+    img[src="vit_logo.png"] {
+        width: 350px;
+        height: 200px;
+        margin-bottom: 10px;
+
+    }
+
+
+
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+  padding-top: 4.5%;
+  padding-left: 5%;
+}
+
+
+.footer-distributed .footer-right{
+  width: 20%;
+  text-align: right;
+  position:absolute;
+  padding-top: 6%;
+  padding-right: 5%;
+  right:0.5px;
+
+}
+
+
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 100px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #c3c2c2;
+  border-radius: 2px;
+
+  font-size: 60px;
+  color: #0a0a0a;
+  text-align: right;
+  line-height: 35px;
+  
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.footer-distributed .footerBottom{
+    /* display: inline-block;
+    text-align: text-bottom;
+    bottom: 0; */
+    /* display:inline-block;
+    position:absolute; */
+    font-size: 30px;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    line-height: 30px;
+    
+    /* position:absolute; */
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right,
+  .footer-distributed .footerBottom{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: right;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+
+}
